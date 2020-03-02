@@ -3,8 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.4'
 
-gem 'auxiliary_rails', git: 'https://github.com/ergoserv/auxiliary_rails', branch: 'develop'
+gem 'auxiliary_rails', github: 'ergoserv/auxiliary_rails', branch: 'develop'
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'formtastic', '~> 3.0'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
