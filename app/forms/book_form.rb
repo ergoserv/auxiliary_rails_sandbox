@@ -6,6 +6,7 @@ class BookForm < ApplicationForm
 
   attr_reader :book
 
+  validates :title, :isbn, :publishing_year, :publisher_name, presence: true
 
   def perform
     publisher =  Publisher.find_or_create_by!(name: publisher_name)
